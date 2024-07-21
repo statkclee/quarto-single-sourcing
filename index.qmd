@@ -1,0 +1,41 @@
+---
+lang: ko-KR
+format: 
+  html: 
+    embed-resources: true
+    toc: true
+    number-sections: true
+---
+
+# 쿼토 실습
+
+싱글소싱 `.qmd` 파일을 통해 `.pdf`, `.html`, `.docx` 파일을 자동으로 생성한다.
+
+## `.qmd` &rarr; `.pdf`, `.html`, `.docx`
+
+- [HTML, PDF, PDF](https://statkclee.github.io/quarto-single-sourcing/map_document.html)
+
+
+## 변수설정 문서
+
+변수 설정 문서(parameterized report)를 저자가 번역한 것으로 R/파이썬 프로그램을 작성할 때 입력값을 달리 받는 함수를 생각하면 이해하기 쉽다. 
+함수는 입력값에 따라 다른 결과를 출력하는데 변수 설정 문서도 입력값을 달리하면 다른 PDF/HTML/워드 문서가 제작되는 것으로 생각하면 된다.
+
+::: {#fig-report layout-ncol=2}
+
+![문서 1개](images/report_single.png)
+
+![문서 N개](images/report_parameter.png)
+
+템플릿 문서에서 N개 문서 순차 생성
+
+:::
+
+- `report_script.R` 파일을 실행한 결과는 `parameter_reports/` 디렉토리에서 확인이 가능하다.
+
+::: callout-note
+### 챗GPT 쿼토 제16장 참조
+
+[변수 설정 문서](https://r2bit.com/gpt-quarto/dw_params.html)
+
+:::
